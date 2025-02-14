@@ -1,17 +1,17 @@
 # Telegram Bot Framework
-aiogram
+aiogram>=2.14,<3.0
 
 # Database
-sqlite3
+# (sqlite3 is part of Python's standard library, so it doesn't need to be listed)
 
 # Web Dashboard & Real-time Updates
-flask
-flask-socketio
+flask>=2.2,<3.0
+flask-socketio>=5.3,<6.0
 
 # Additional Dependencies
-python-dotenv  # For loading .env variables
-requests  # For making API calls (if needed)
-pandas  # If you plan to process data/statistics
+python-dotenv>=1.0,<2.0  # For loading .env variables
+requests>=2.28,<3.0      # For making API calls (if needed)
+pandas>=1.5,<2.0         # For data processing/statistics
 
 # Development & Debugging Tools
-black  # Optional: Code formatter
+black>=22.0,<23.0        # Optional: Code formatter
