@@ -1,0 +1,64 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.gz
+bot.log
+
+# Build artifacts
+dist/
+build/
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.swp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment files (ensure these remain local)
+.env
+.env.local
+.env.*.local
+
+# Project-specific cache and state files
+gameState.json
+*.cache
+
+# Database files and folders
+observer_protocol.db
+database/
+sqlite.db
+*.sqlite3
+
+# Python-related files
+## Compiled files and cache
+__pycache__/
+*.pyc
+*.pyo
+## Virtual environments
+venv/
+.venv/
+
+# CI/CD configuration
+.github/workflows/
+test_ci.yaml
+
+# Temporary caches (web dashboard and telegram mini-game)
+web_dashboard/__pycache__/
+web_dashboard/*.sqlite3
+telegram_mini_game/__pycache__/
+telegram_mini_game/*.sqlite3
+
+# Documentation
+docs/
+
+# Miscellaneous temporary or uncertain files
+unsure_files/

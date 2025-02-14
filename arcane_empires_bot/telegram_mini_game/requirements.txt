@@ -1,0 +1,17 @@
+# Telegram Bot Framework
+aiogram
+
+# Database
+sqlite3
+
+# Web Dashboard & Real-time Updates
+flask
+flask-socketio
+
+# Additional Dependencies
+python-dotenv  # For loading .env variables
+requests  # For making API calls (if needed)
+pandas  # If you plan to process data/statistics
+
+# Development & Debugging Tools
+black  # Optional: Code formatter

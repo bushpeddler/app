@@ -1,0 +1,12 @@
+{
+  "name": "telegram-mini-game",
+  "version": "1.0.0",
+  "description": "Arcane Empires: Telegram-based financial RPG",
+  "main": "bot.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.1",
+    "sqlite3": "^5.1.2",
+    "telegraf": "^4.7.0"
+  }
+}

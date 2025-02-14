@@ -1,0 +1,33 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches:
+      - main
+      - dev  # Adjust as needed
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Ensure this file exists with all dependencies
+
+      - name: Run Unit Tests
+        run: |
+          python -m unittest discover tests/

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane Empires - Web Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>📊 Arcane Empires - Market Dashboard</h1>
+
+    <h2>Stock Market</h2>
+    <canvas id="marketChart"></canvas>
+
+    <h2>Top Players</h2>
+    <ul id="playerList"></ul>
+
+    <h2>Faction Influence</h2>
+    <canvas id="factionChart"></canvas>
+
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>
