@@ -2,7 +2,7 @@
 aiogram>=2.14,<3.0
 
 # Database
-# (sqlite3 is part of Python's standard library, so it doesn't need to be listed)
+
 
 # Web Dashboard & Real-time Updates
 flask>=2.2,<3.0
