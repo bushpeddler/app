@@ -29,36 +29,39 @@ def trade(player_id, stock, amount):
     with sqlite3.connect("observer_protocol.db") as conn:
         cursor = conn.cursor()
 
-        # Check if player is market-restricted due to AI hacking
-        cursor.execute("SELECT market_restricted_until FROM players WHERE id = ?", (player_id,))
-        restriction = cursor.fetchone()
-        if restriction and restriction[0]:
+        # ✅ Ensure player exists and fetch their wealth
+        cursor.execute("SELECT wealth, market_restricted_until FROM players WHERE id = ?", (player_id,))
+        result = cursor.fetchone()
+
+        if not result:
+            return "❌ Player not found!"
+
+        player_wealth, restriction = result
+
+        if restriction:
             return "⛔ Market access restricted due to AI detection! Try again later."
 
-        # Get stock price
+        # ✅ Ensure stock exists before proceeding
         cursor.execute("SELECT price FROM market WHERE stock = ?", (stock,))
-        result = cursor.fetchone()
-        if not result:
+        stock_result = cursor.fetchone()
+
+        if not stock_result:
             return f"❌ Stock '{stock}' not found!"
-        stock_price = result[0]
-
+        
+        stock_price = stock_result[0]
         total_cost = stock_price * amount
-
-        # Verify player's balance
-        cursor.execute("SELECT wealth FROM players WHERE id = ?", (player_id,))
-        player_wealth = cursor.fetchone()[0]
 
         if player_wealth < total_cost:
             return "❌ Insufficient funds!"
 
         new_wealth = player_wealth - total_cost
 
-        # Update player's balance & record trade
+        # ✅ Transaction: Update player's wealth & record trade
         cursor.execute("UPDATE players SET wealth = ? WHERE id = ?", (new_wealth, player_id))
         cursor.execute("INSERT INTO trade_history (player_id, stock, amount) VALUES (?, ?, ?)", (player_id, stock, amount))
         conn.commit()
 
-    # ✅ Fixed call to `update_market`
+    # ✅ Call `market_engine.update_market()`
     market_engine.update_market(stock, amount)
 
     return f"✅ Trade successful! {amount} shares of {stock} bought at {stock_price} credits each."
