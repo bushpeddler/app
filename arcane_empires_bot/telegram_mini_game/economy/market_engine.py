@@ -1,12 +1,9 @@
+import os
 import random
 import sqlite3
-import os
 
-# Set database path correctly
-DB_PATH = os.path.join(os.path.dirname(__file__), "../../observer_protocol.db")
-
-# List of stocks used in the basic market simulation
-STOCKS = ["Quantum Energy", "NeoTech AI", "Cyber Credits", "Shadow Bank", "Arcane Bonds"]
+# Correct database path
+DB_PATH = "/workspaces/mini-app/observer_protocol.db"
 
 def get_market_status():
     """Returns current stock values from the market table."""
@@ -16,6 +13,9 @@ def get_market_status():
     data = cursor.fetchall()
     conn.close()
     return {stock[0]: stock[1] for stock in data}
+
+# List of stocks used in the basic market simulation
+STOCKS = ["Quantum Energy", "NeoTech AI", "Cyber Credits", "Shadow Bank", "Arcane Bonds"]
 
 def update_market():
     """
