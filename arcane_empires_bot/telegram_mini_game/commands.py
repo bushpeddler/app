@@ -11,7 +11,7 @@ This version includes:
 
 from aiogram import types, Dispatcher
 import config
-import market_engine
+from economy import market_engine  # ✅ Corrected import
 import database
 import event_system
 import faction_system
