@@ -1,59 +1,56 @@
-import os
 import random
 import sqlite3
 
-# Define database path dynamically
-DB_PATH = os.path.join(os.path.dirname(__file__), "../observer_protocol.db")
-
-# List of stocks used in the market simulation
+# List of stocks used in the basic market simulation
 STOCKS = ["Quantum Energy", "NeoTech AI", "Cyber Credits", "Shadow Bank", "Arcane Bonds"]
 
 def get_market_status():
-    """Fetches current stock values from the market table."""
-    conn = sqlite3.connect(DB_PATH)
+    """Returns current stock values from the market table."""
+    conn = sqlite3.connect("observer_protocol.db")
     cursor = conn.cursor()
-    cursor.execute("SELECT stock, price FROM market")
+    cursor.execute("SELECT * FROM market")
     data = cursor.fetchall()
     conn.close()
-    return {stock: price for stock, price in data}
+    return {stock[0]: stock[1] for stock in data}
 
-def update_market():
+def update_market(stock, amount):
     """
-    Simulates AI-driven market price changes with random fluctuations.
-    Each stock's price is adjusted by a random value between -20 and 50.
+    Updates market prices based on trade volume.
+    
+    Parameters:
+    stock (str): The name of the stock to update.
+    amount (int): The amount of the stock traded, influencing the price change.
     """
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect("observer_protocol.db")
     cursor = conn.cursor()
-
-    for stock in STOCKS:
-        change = random.randint(-20, 50)
-        cursor.execute("UPDATE market SET price = price + ? WHERE stock = ?", (change, stock))
-
+    
+    # Modify stock price dynamically based on the amount traded
+    if amount > 500:
+        change = 30  # Increase price if trade amount is high
+    else:
+        change = random.randint(-20, 10)  # Random change if trade amount is low, with a bias towards decrease
+    
+    cursor.execute("UPDATE market SET price = price + ? WHERE stock = ?", (change, stock))
     conn.commit()
     conn.close()
+    
+    print(f"📈 Updated {stock}: {change} credits (Traded Amount: {amount})")  # ✅ Debugging Log
 
 def ai_trades():
     """
-    Analyzes recent player trades and adjusts stock prices.
-    - If a trade amount exceeds 500, the price increases by 30.
-    - Otherwise, the price decreases by 10.
+    Analyzes recent player trades and adjusts stock prices accordingly.
+    - If a trade amount exceeds 500, the price is increased by 30.
+    - Otherwise, the price is decreased by a random value between -20 and 10.
     """
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect("observer_protocol.db")
     cursor = conn.cursor()
-    cursor.execute("SELECT stock, amount FROM trade_history ORDER BY timestamp DESC LIMIT 10")
+    cursor.execute("SELECT * FROM trade_history ORDER BY timestamp DESC LIMIT 10")
     recent_trades = cursor.fetchall()
-
-    for stock, amount in recent_trades:
-        if amount > 500:
-            cursor.execute("UPDATE market SET price = price + 30 WHERE stock = ?", (stock,))
-        else:
-            cursor.execute("UPDATE market SET price = price - 10 WHERE stock = ?", (stock,))
-
-    conn.commit()
+    
+    for trade in recent_trades:
+        stock, amount = trade[1], trade[2]
+        update_market(stock, amount)
+    
     conn.close()
-
-if __name__ == "__main__":
-    print("Current Market Status:", get_market_status())
-    update_market()
-    ai_trades()
-    print("Market Updated.")
+    
+    print("✅ AI Trade Adjustments Complete")  # ✅ Debugging Log
