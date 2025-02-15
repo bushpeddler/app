@@ -55,7 +55,7 @@ app/
 │   │   │   ├── crossserver_trading.md
 │   │   ├── faction_interactions/
 │   │   │   ├── hacking.md
-│   │   │   ├── multiuser_tactics.md
+│   │   │   ├── multi_user_tactics.md
 │   │   │   ├── ties.md
 │   │   ├── final/
 │   │   │   ├── AI_collapse.md
@@ -69,8 +69,8 @@ app/
 │   │   ├── user_gov/
 │   │   │   ├── dynamic_economy.md
 │   │   │   ├── user_gov.md
-│   │   │   ├── voting_mechs.md  # New file added
-│   │   │   ├── policies/  # New folder added
+│   │   │   ├── voting_mechs.md
+│   │   │   ├── policies/
 │   │   │   │   ├── taxation.py
 │   │   │   │   ├── regulations.py
 │   ├── wealth_persistence/
@@ -84,14 +84,14 @@ app/
 │   │   │   ├── trading_logic.py
 │   │   ├── docs/
 │   │   │   ├── 1.gitignore
-│   │   │   ├── broad_market_engine_combo.py
-│   │   │   ├── code_spaces_instructions.md
-│   │   │   ├── future_integration_concepts.md
+│   │   │   ├──markt_engine_alt.py
+│   │   │   ├─spaces_guide.md
+│   │   │   ├── future_concepts.md
 │   │   │   ├── README_v1.md
-│   │   │   ├── rewritten_notes_part1.md
-│   │   │   ├── rewritten_notes_part2.md
-│   │   │   ├── rewritten_notes_part3.md
-│   │   │   ├── rewritten_notes_part4.md
+│   │   │   ├── notes_part1.md
+│   │   │   ├── notes_part2.md
+│   │   │   ├── notes_part3.md
+│   │   │   ├── notes_part4.md
 │   │   │   ├── telegram_stuff.txt
 │   │   ├── events/
 │   │   │   ├── ai_human_hybrid.py
@@ -104,6 +104,10 @@ app/
 │   │   │   ├── user_trading.py
 │   │   ├── gov/
 │   │   │   ├── faction_gov.py
+|   |   |   |-voting_mechs.md
+|   |   |   |-policies/
+|   |   |     |-taxation.py
+|   |   |     |-regulations.py
 │   │   ├── market/
 │   │   │   ├── bubbles.py
 │   │   │   ├── engine.py
@@ -112,7 +116,7 @@ app/
 │   │   │   ├── scam.py
 │   │   │   ├── user_banking.py
 │   │   ├── multi_user/
-│   │   │   ├── cross_server_economy.py
+│   │   │   ├── x_server_econ.py
 │   │   ├── .env
 │   │   ├── .gitignore
 │   │   ├── bot.py
@@ -120,7 +124,7 @@ app/
 │   │   ├── config.py
 │   │   ├── database.py
 │   │   ├── engine.py
-│   │   ├── file_directory_structure.md
+│   │   ├── directory.md
 │   │   ├── logic.py
 │   │   ├── package.json
 │   │   ├── requirements.txt
