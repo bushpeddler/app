@@ -11,7 +11,7 @@ This file connects with market_engine.py, faction_system.py, and observer_protoc
 
 import sqlite3
 import random
-import market_engine
+from economy import market_engine  # ✅ Fixed import
 import faction_system
 
 def trade(player_id, stock, amount):
@@ -58,7 +58,7 @@ def trade(player_id, stock, amount):
         cursor.execute("INSERT INTO trade_history (player_id, stock, amount) VALUES (?, ?, ?)", (player_id, stock, amount))
         conn.commit()
 
-    # Trigger market reaction
+    # ✅ Fixed call to `update_market`
     market_engine.update_market(stock, amount)
 
     return f"✅ Trade successful! {amount} shares of {stock} bought at {stock_price} credits each."
