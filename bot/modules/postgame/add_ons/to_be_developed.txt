@@ -1,0 +1,7 @@
+expand mechanics:
+
+-player-owned banks
+
+-financial corruption mechanics
+
+-AI-driven economic sabotage

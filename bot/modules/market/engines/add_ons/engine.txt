@@ -1,0 +1,17 @@
+engine.py - Market Engine for Dynamic Stock Fluctuations
+
+✅ Handles AI-driven stock price changes
+✅ Processes faction influence on the economy
+✅ Manages AI trade adjustments based on real-time market conditions
+
+# engine.py - Market Engine for Arcane Empires
+
+
+———
+
+Summary of Updates
+
+✔ Simplified and optimized for better performance
+✔ Better logging & debugging for market updates
+✔ Faction influence is streamlined
+✔ More maintainable & scalable structure

@@ -1,0 +1,27 @@
+Notes on lore.py
+
+	Purpose: This script tracks, records, and retrieves historical financial events and legendary traders to make the economy feel persistent and evolving.
+Category: Economic History & Adaptive Trading
+Impacts: AI learning, factional market shifts, and future trade predictions.
+
+Key Features
+
+✅ Persistent Market Records → Keeps track of booms, crashes, and AI takeovers.
+✅ Legendary Traders System → Players who shape markets get immortalized in financial archives.
+✅ Historical Market Data → Future AI trading & faction policies are based on past player decisions.
+✅ Faction Influence Logging → Monitors which factions controlled past markets for economic continuity.
+
+📌 How It Works
+
+Function	Purpose
+record_market_event()	Logs major economic events into global financial history.
+track_legendary_trader()	Records notable players who influenced the market.
+retrieve_historical_trends()	Fetches past events for AI & player market predictions.
+
+✅ Next Steps
+
+1️⃣ Linking to AI Evolution → AI analyzes past market data for more advanced trading responses.
+2️⃣ Player-Faction Market Influence → Historical faction takeovers affect future game mechanics.
+3️⃣ Predictive Economic Cycles → Repeating financial patterns create new investment opportunities.
+
+This ensures Arcane Empires has a living economy, where financial history shapes the future, AI adapts, and players become legends. 🚀

@@ -1,0 +1,34 @@
+📂 app/bot/modules/market/ - Market System File Structure
+
+This is a comprehensive reference for all market-related files, including engines, logic, AI market interactions, and player-driven financial mechanics.
+
+📌 Main Market Folder (market/)
+
+File	Description
+
+bubbles.py	AI inflates asset prices before crashing them.
+
+player_banking.py	Allows players to create banks, hedge funds, & deposit wealth.
+
+scam.py	AI manipulates the market using pump-and-dump & deception strategies.
+
+fake_orders.py	AI creates fake buy/sell orders to mislead traders.
+
+news_systems.py	AI generates financial news, including misinformation.
+
+lore.md	Contains persistent financial history & economic narratives.
+
+📂 market/engine/ - Market Simulation & AI Market Influence
+
+File	Description
+engine.py	Core market system engine, handling trading, AI, & economic shifts.
+factions.py	Faction-driven market effects, adjusting prices based on faction power.
+
+📂 market/logic/ - Market Intelligence & Trade Processing
+
+File	Description
+logic.py	Central market logic, validating trades, price fluctuations, & AI behaviors.
+
+✅ Reference Use
+
+This list serves as a checklist when ensuring all market mechanics are properly integrated into core game files.

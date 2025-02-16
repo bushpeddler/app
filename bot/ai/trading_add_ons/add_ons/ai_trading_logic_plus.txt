@@ -1,0 +1,52 @@
+This file explains how AI trading works and what features are planned.
+
+# AI Market Engine (Advanced Version)
+
+## 📌 Overview
+This script is the **first step** toward a **fully autonomous AI market system**.  
+The AI **monitors stock trends**, **trades dynamically**, and **flags suspicious price changes**.
+
+## 🔹 Features
+- **AI Trading Profiles**: Conservative, Balanced, Aggressive.
+- **Bull/Bear Market Cycles**: AI adjusts risk based on market conditions.
+- **Stock Trend Analysis**: AI evaluates short-term uptrends and downtrends.
+- **Market Exploit Detection**: Detects rapid price shifts and flags for review.
+
+## 🔹 How AI Makes Decisions
+| AI Profile  | Buy Chance | Sell Chance | Risk Tolerance |
+|-------------|-----------|-------------|---------------|
+| Conservative | 30% | 70% | Low |
+| Balanced | 50% | 50% | Medium |
+| Aggressive | 70% | 30% | High |
+
+- In a **Bull Market**, AI is **aggressive** and trades frequently.
+- In a **Bear Market**, AI is **cautious** and sells more often.
+
+## 🔹 Future Features
+✅ **AI Learning from Players**: AI remembers past trades and reacts.  
+✅ **Market Sentiment Analysis**: AI reads in-game news events.  
+✅ **Faction-Based Economic Warfare**: AI influences different factions.  
+✅ **Dynamic Stock Inflation & Crashes**: AI reacts to major game events.  
+
+## 🔹 How to Use
+Run the AI trading system manually:
+
+```bash
+python ai_market_engine.py
+
+To integrate it into the game loop, call:
+
+from game.ai_systems.trading_logic import ai_market_update
+ai_market_update()
+
+⏭️ Next Steps
+	•	This lays the groundwork for AI learning and market adaptation.
+	•	Later, we plug in memory-based AI behaviors so AI can respond to player decisions over time.
+	•	Once AI tracks player transactions, we enable counter-strategies & deeper trading mechanics.
+
+🔹 Is This a Good Starting Point?
+
+This doesn’t require AI learning yet, but prepares the framework for:
+1️⃣ AI reacting to player trades.
+2️⃣ AI shaping the market dynamically.
+3️⃣ AI preventing exploits & manipulation.

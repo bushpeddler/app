@@ -1,0 +1,17 @@
+factions.py - Faction Influence on Market Dynamics
+
+✅ Handles faction-based market influence
+✅ Integrates with faction gameplay mechanics
+✅ Optimized for AI-driven trade adjustments
+✅ Prevents unintended economic imbalances
+
+# factions.py - Faction Market Influence System
+
+=====
+
+Summary of Updates
+
+✔ Improved faction-based market influence
+✔ Prevents imbalanced faction economy control
+✔ Integrates seamlessly with the Market Engine
+✔ More maintainable & expandable for future faction mechanics

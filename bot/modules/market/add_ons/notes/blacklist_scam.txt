@@ -1,0 +1,5 @@
+blacklist_scam.py (Prevents Repeat Scams)
+	•	✅ Tracks players who were already scammed.
+	•	✅ Prevents AI from targeting the same player repeatedly.
+
+# blacklist_scam.py - Prevents players from being scammed multiple times

@@ -1,0 +1,40 @@
+logic.py - Core Market Logic
+
+📂 Directory: app/bot/modules/market/logic/
+
+✅ Purpose:
+This script serves as the central market logic handler, connecting AI trading, player interactions, market manipulation, and faction influence. It ensures that all economic operations follow the core game rules.
+
+📌 Features & Functionality
+
+✅ Market Price Calculations → Processes AI and player-driven price fluctuations.
+✅ Wealth Distribution Rules → Governs how credits flow between players, banks, and AI entities.
+✅ Market Stability Checks → Prevents excessive market crashes or inflation cycles.
+✅ Trading Validations → Ensures trades are legitimate and follow economy rules.
+✅ Faction Influence Calculations → Modifies markets based on faction governance and economic policies.
+
+🖥️ Code Implementation
+
+# logic.py - Central Market Logic Engine
+
+———-
+
+Function Breakdown
+
+Function	Purpose
+validate_trade(player_id, stock, amount)	Checks if a trade follows economic rules.
+execute_trade(player_id, stock, amount)	Processes the trade & logs transaction history.
+apply_market_effects()	Applies AI-driven price shifts & faction-based economic influence.
+
+📈 Future Enhancements
+
+🔹 Market Fraud Detection → Identify high-risk traders & AI market exploits.
+🔹 Risk Analysis Models → Forecast economic crashes & financial booms.
+🔹 Player-Controlled Market Syndicates → Allow players to form trade monopolies.
+
+✅ Next Steps
+	•	Ensure market logic integrates with faction & AI-driven financial events.
+	•	Expand AI & economic intelligence models for smarter financial simulations.
+	•	Develop dynamic stock algorithms that learn from player interactions.
+
+This completes logic.py and ensures the market remains balanced, reactive, and engaging in Arcane Empires! 🚀

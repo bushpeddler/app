@@ -1,0 +1,15 @@
+Improvements & Fixes
+
+✅ Bank Existence Check → Prevents duplicate bank names.
+✅ Player Wealth Verification → Ensures they have enough credits before deposits.
+✅ Ownership Enforcement → Players can only withdraw from their own banks.
+✅ Logging System → Captures all transactions for debugging.
+✅ Withdraw Feature Added → Players can now withdraw money from their banks.
+✅ Prevention of Negative Transactions → No zero or negative deposits/withdrawals.
+
+📌 What’s Next?
+	•	Interest System: Banks should accumulate interest over time.
+	•	Loan & Debt Mechanics: Players should be able to take & repay loans.
+	•	Faction Banking: Factions could own & operate banks collectively.
+
+This version sets up player banking mechanics while maintaining financial stability in Arcane Empires.

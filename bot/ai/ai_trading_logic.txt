@@ -1,0 +1,34 @@
+# 🤖 AI Trading Logic - Arcane Empires
+
+## Overview
+The AI in **Arcane Empires** dynamically interacts with the in-game economy by analyzing **player trades**, **market trends**, and **faction influence** to adjust stock prices and maintain economic balance.
+
+## 🔹 AI Trader Profiles
+The AI is split into different trading personalities:
+
+| AI Trader Type       | Risk Level | Market Impact |
+|----------------------|------------|---------------|
+| 🏦 **Cautious Investor** | Low (30%) | Minimal, prefers stable investments. |
+| 📉 **Aggressive Trader** | High (80%) | Makes bold moves, high-risk trading. |
+| 🏴‍☠️ **Market Manipulator** | Extreme (100%) | Can create artificial price shifts. |
+
+## 🛠️ AI Trading Behavior
+1. **Monitors Recent Trades**:
+   - AI scans the last **10 player trades** and determines stock movement.
+
+2. **Adjusts Prices Dynamically**:
+   - AI can **increase or decrease stock prices** based on trade volume.
+   - AI responds to **high-frequency trading by reacting faster**.
+
+3. **Simulates Market Fluctuations**:
+   - Occasionally makes **random investments** to keep the market unpredictable.
+
+4. **Faction Influence** *(Planned Feature)*:
+   - AI trading will be influenced by **player faction choices**.
+   - Factions can unlock **AI-assisted financial tools**.
+
+## ⚡ How to Trigger AI Trading
+- AI trading is **automatically activated** by player trades.
+- To manually trigger AI trading (for testing):
+  ```bash
+  python ai_trading_logic.py

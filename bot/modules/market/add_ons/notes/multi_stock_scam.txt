@@ -1,0 +1,5 @@
+multi_stock_scam.py (Scams Multiple Assets Simultaneously)
+	•	✅ AI manipulates multiple stocks at once, not just one.
+	•	✅ Can simulate AI-controlled market crashes.
+
+# multi_stock_scam.py - AI manipulates multiple assets simultaneously

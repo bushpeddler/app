@@ -1,0 +1,16 @@
+Notes on postgame.py
+
+This script manages postgame financial evolution, transitioning the economy from AI-controlled systems to player-driven markets.
+
+🏛️ Key Features
+
+✔ Determines Postgame Economic State → Checks whether AI still controls the market or if players now dictate financial systems.
+✔ Transitions Market to Player Control → Converts AI-driven economies into player-led financial institutions.
+✔ Introduces New Factions → Adds postgame economic entities like the Decentralists, Market Lords, and Crypto-Nomads.
+✔ Triggers Financial Wars → Simulates economic conflicts between postgame factions, impacting global trade & market stability.
+
+🌍 Postgame Scenarios Covered
+	•	AI remains in control → Players have minimal influence.
+	•	Factions take over → Syndicate or Technocrats control the economy.
+	•	Fully Player-Run Markets → Players create banks, hedge funds, financial institutions, and monopolies.
+	•	Economic Chaos & Market Wars → Postgame factions fight for financial control.

@@ -1,0 +1,27 @@
+Enhanced market_scam.py - AI-Driven Market Manipulation
+
+This improved version expands AI trading scams to include:
+	•	Pump-and-dump manipulation
+	•	Fake market signals
+	•	AI-driven liquidity traps
+	•	Logging for scam detection & analysis
+	
+	——-
+	
+Enhancements & Fixes
+
+✅ Expanded Scam Tactics → AI can now pump, dump, or fake hype.
+✅ Fake Buy/Sell Orders → AI manipulates traders with false transactions.
+✅ Logging Integration → Captures all scam activities for data analysis.
+✅ Market Stability Consideration → Prevents excessive AI-driven volatility.
+✅ Error Handling → Prevents database crashes due to faulty AI actions.
+
+📌 Next Steps
+	•	Blacklist AI scam victims → Players may become immune after being scammed once.
+	•	Multi-Stock Scams → AI targets multiple assets simultaneously.
+	•	Faction Countermeasures → Players can invest in scam detection tools.
+
+This version ensures AI scams impact the economy dynamically while keeping player control balanced.
+
+——
+

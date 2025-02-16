@@ -1,0 +1,25 @@
+Notes on news_systems.py
+
+	Purpose: This script simulates AI-generated financial news that directly manipulates stock prices.
+Category: Market Influence & Misinformation
+Impacts: AI propaganda, stock volatility, and faction-driven market narratives.
+
+Key Features
+
+✅ AI-Driven Market Influence → Stocks react dynamically to fake & real financial news.
+✅ Faction-Controlled Misinformation → Certain factions can leak, spread, or counteract false news.
+✅ Stock Volatility Mechanics → Prices fluctuate based on AI-generated events.
+✅ Randomized Market Reactions → Unpredictable market trends emerge, making trading riskier.
+
+📌 How It Works
+
+Function	Purpose
+generate_market_news()	Creates financial news headlines & applies stock value changes.
+
+✅ Next Steps
+
+1️⃣ Faction Response Mechanisms → Factions react to false news, triggering countermeasures or market corrections.
+2️⃣ AI Fake News Detection → Players can invest in AI tools to differentiate truth from misinformation.
+3️⃣ Historical Market News Archives → Past news impacts future AI behavior and trading strategies.
+
+This ensures Arcane Empires has a dynamic, evolving economy, where AI-generated financial news dictates the market, factions fight for control, and players must adapt to misinformation warfare. 

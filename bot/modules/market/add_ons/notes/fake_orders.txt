@@ -1,0 +1,42 @@
+📌 Notes on fake_orders.py
+
+	Purpose: Implements AI-driven fake buy/sell orders to manipulate player behavior in the market.
+
+1️⃣ Overview
+
+AI uses false market signals to trick players into making poor trading decisions.
+
+✅ Fake Buy Orders → AI creates artificial demand, making traders think a stock is rising.
+✅ Fake Sell Orders → AI creates panic selling, causing traders to dump assets irrationally.
+
+2️⃣ Key Mechanics
+
+Mechanism	Effect on Market
+Fake Buy Orders	Players see high buy volumes, assuming a stock is rising.
+Fake Sell Orders	Players see massive sell-offs, triggering fear-based selling.
+Market Confusion	False trades make it harder to determine real vs. AI-generated trends.
+
+3️⃣ AI Order Logic
+	•	AI chooses a random stock from key assets.
+	•	50% chance of generating BUY or SELL fake orders.
+	•	Order volume is randomized between 100 - 500 shares.
+	•	Fake orders are logged into the database but don’t actually execute real transactions.
+
+4️⃣ Interaction with Other Market Mechanics
+	•	Fake orders can be detected by scam_countermeasures.py (if the player invested in scam protection).
+	•	They are separate from Pump-and-Dump mechanics but can be combined for advanced AI deception.
+	•	Observer AI may intervene if players over-exploit fake orders to gain an advantage.
+
+5️⃣ Future Enhancements
+
+🔹 AI Adapts to Player Reactions → If players detect fake orders too easily, AI can change tactics.
+🔹 Player Tools for Scam Detection → Players may unlock financial algorithms that expose fake orders.
+🔹 Factions Use Fake Orders for Market Warfare → Some factions may deploy their own fake orders to manipulate rival economies.
+
+✅ Why This Matters
+
+✔ Adds market uncertainty → Players cannot trust all trade signals.
+✔ Creates AI-driven market deception → Encourages players to analyze trades carefully.
+✔ Expands scam mechanics → Works alongside Pump-and-Dump schemes for deeper AI strategy.
+
+This setup makes fake_orders.py a critical tool in AI-driven financial manipulation. 🚀

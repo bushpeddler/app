@@ -1,0 +1,5 @@
+scam_countermeasures.py (Players Invest in Scam Protection)
+	•	✅ Players can invest in scam detection tools.
+	•	✅ Detects AI scams before they occur.
+
+# scam_countermeasures.py - Allows players to buy scam protection

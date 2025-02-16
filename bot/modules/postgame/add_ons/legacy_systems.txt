@@ -1,0 +1,35 @@
+legacy_systems.py - Persistent Economic Influence & Player Legacy Mechanics
+
+"""
+legacy_systems.py - Financial Persistence & Legacy Mechanics
+
+✅ Preserves financial influence across game cycles.
+✅ Implements wealth inheritance & economic reputation tracking.
+✅ Supports faction-controlled economic archives.
+✅ Enables long-term economic lore through historical financial records.
+
+—————-
+
+Notes on legacy_systems.py
+
+This script ensures financial persistence, allowing players to retain economic influence between game cycles.
+
+🏛️ Key Features
+
+✔ Legacy Wealth Inheritance → Retains a portion of player wealth across game resets.
+✔ Factional Economic Archives → Stores historical financial records, influencing future trade laws & policies.
+✔ Establishes Legacy Institutions → High-tier players can create persistent banks, hedge funds, and financial structures.
+✔ Archives Market History → Records economic crashes, factional conflicts, & financial scandals, which affect future game cycles.
+
+📊 Persistent Economic Effects
+
+Legacy Mechanic	Impact on Next Cycle
+Wealth Inheritance	Retains 5-80% of capital for future gameplay.
+Faction Influence	Past economic rulers shape future faction policies.
+Market History Archives	Players can study past financial trends for strategic advantage.
+Financial Dynasties	Players with high economic power create long-term wealth structures.
+
+🌍 How This Enhances Gameplay
+	•	Prevents hard resets, allowing long-term financial investment strategies.
+	•	Creates “historical” financial stories, making each cycle unique.
+	•	Encourages multi-cycle player engagement, where past successes matter.
